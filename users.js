@@ -45,20 +45,23 @@ function userLangs(userList){
                 output += ", ";
             }
         }
-        output += userList[i].fname + " is also interested in ";
-        for (var j = 0; j < Object.keys(userList[i].interests).length; j++) {
-            // console.log(Object.keys(userList[i].interests).length);
-            // something is fucked up with these lengths, check it out
-            for (var k = 0; k < Object.keys(userList[i].interests).length; k++){
-                output += (userList[i].interests[j][k]);
-                if (j == Object.keys(userList[i].interests).length-2){
-                    output += " TEST "
-                }
-                output += ", ";
-            }
-        }
+        // output += userList[i].fname + " is also interested in ";
+        // for (var j in userList[i].interests) {
+        //     console.log("j is " + j)
+        //     for (var k in userList[i].interests[j]){
+        //         console.log("k is " + userList[i].interests[j][k]);
+        //         if (k == userList[i].interests[j][k].length - 1){
+        //             console.log("where the hell are you");
+        //         }
+        //         output += userList[i].interests[j][k] + ", ";
+        //         if (j == userList[i].interests[ Object.keys(userList[i].interests).length ] -1){
+        //             output += " TEST ";
+        //         }
+        //     }
+        // }
         console.log(output);
     }
 }
 
+// var j = 0; j < Object.keys(userList[i].interests).length; j++
 userLangs(users)
