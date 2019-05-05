@@ -1,0 +1,4 @@
+printArray has a time complexity O(n)
+findNth has a time complexity  O(1)
+halving has a time complexity O(n)
+indentityMatrix has a time complexity O(n^2)
